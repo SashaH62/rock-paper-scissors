@@ -1,9 +1,10 @@
 .player-input-container {
     display: grid;
-    gap: 7rem;
+    gap: 5rem 3rem;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
-    max-width: 800px;
-    background: url('../images/bg-triangle.svg') no-repeat center;
+    max-width: 600px;
+    background: url('../images/bg-triangle.svg') no-repeat 50% 75%;
     background-size: 60%;
+    margin-top: 5rem;
 }

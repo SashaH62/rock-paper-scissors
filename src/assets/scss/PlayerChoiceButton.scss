@@ -1,22 +1,16 @@
 .player-choice-btn {
-    width: 160px;
-    height: 160px;
-    border-radius: 100%;
     outline: none;
     background: transparent;
     border: 0;
     z-index: 2;
-    // margin: 0 5rem;
-
-    &:hover {
-        cursor: pointer;
-    }
+    width: 100%;
+    transition: .1s ease-in-out transform;
 
     .player-choice-btn-inner {
+        width: 100%;
+        aspect-ratio: 1/1;
         background-color: #fff;
         position: relative;
-        height: 100%;
-        width: 100%;
         border-radius: 100%;
         display: flex;
         align-items: center;
@@ -30,8 +24,8 @@
         &::before {
             content: "";
             display: block;
-            height: 210px;
-            width: 210px;
+            height: 130%;
+            width: 130%;
             border-radius: 100%;
             position: absolute;
             top: 50%;
@@ -39,32 +33,53 @@
             transform: translateY(-50%) translateX(-50%);
             z-index: -1;
         }
+    }
 
-        &.paper {
-            grid-column: 1 / 2;
-            grid-row: 1 / 2;
+    &.paper {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        .player-choice-btn-inner {
             &::before {
                 background-image: $paper_gradient;
                 box-shadow: hsl(230, 89%, 55%) 0px 10px; 
             }
         }
+    }
 
-        &.rock {
-            grid-column: 2 / 3;
-            grid-row: 2 / 3;
+    &.rock {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+        .player-choice-btn-inner {
             &::before {
                 background-image: $rock_gradient;
                 box-shadow: hsl(349, 71%, 35%) 0px 10px; 
             }
         }
+    }
 
-        &.scissors {
-            grid-column: 3 / 4;
-            grid-row: 1 / 2;
+    &.scissors {
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
+        .player-choice-btn-inner {
             &::before {
                 background-image: $scissors_gradient;
                 box-shadow: hsl(39, 89%, 35%) 0px 10px; 
             }
         }
+    }
+}
+
+.player-input-container {
+    .player-choice-btn {
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+    }
+}
+
+.results-container  {
+    .player-choice-btn {
+        width: 80%;
     }
 }

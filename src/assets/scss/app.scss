@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
 
 @import './HeaderContainer.scss';
+@import './GameContainer.scss';
 @import './PlayerInputContainer.scss';
+@import './ResultsContainer.scss';
 @import './ScoreBoard.scss';
 @import './PlayerChoiceButton.scss';
 
@@ -34,4 +36,23 @@ body,
   align-items: center;
   justify-content: center;
   flex-flow: column;
+}
+
+.button {
+  outline: none;
+  background: transparent;
+  border: 0;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background: #fff;
+  padding: 13px 2rem;
+  border-radius: .35rem;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: .3s ease-in-out all;
+
+  &:hover {
+    cursor: pointer;
+    color: hsl(349, 71%, 52%);
+  }
 }

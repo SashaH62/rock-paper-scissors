@@ -1,0 +1,39 @@
+.results-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 50px;
+
+    .col-md-3 {
+        width: 33.3%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .result {
+        h4 {
+            color: #fff;
+            margin-bottom: 5rem;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+        }
+    }
+
+    .result-input {
+        .result-heading {
+            font-size: 3rem;
+            text-transform: uppercase;
+            color: #fff;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .button {
+            padding: 13px 50px;
+        }
+    }
+}
