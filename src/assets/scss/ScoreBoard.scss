@@ -1,0 +1,23 @@
+.score-board {
+    background-color: #fff;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+
+    h3 {
+        text-transform: uppercase;
+        color: $score;
+        font-size: 1rem;
+        letter-spacing: 1.25px;
+    }
+
+    .score {
+        font-size: 4rem;
+        line-height: 1;
+        color: $dark;
+        font-weight: 700;
+    }
+}

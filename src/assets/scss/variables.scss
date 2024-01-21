@@ -1,0 +1,14 @@
+// Gradients
+
+$scissors_gradient: linear-gradient(0deg, hsl(39, 89%, 49%) 0%, hsl(40, 84%, 53%) 100%);
+$paper_gradient: linear-gradient(0deg, hsl(230, 89%, 62%) 0%, hsl(230, 89%, 65%) 100%);
+$rock_gradient:  linear-gradient(0deg, hsl(349, 71%, 52%) 0%, hsl(349, 70%, 56%) 100%);
+$lizard_gradient: hsl(261, 73%, 60%) to hsl(261, 72%, 63%);
+$cyan: hsl(189, 59%, 53%) to hsl(189, 58%, 57%);
+$radial_blue: radial-gradient(circle, hsl(214, 47%, 23%) 0%, hsl(237, 49%, 15%) 100%);
+
+// Colors
+
+$dark: hsl(229, 25%, 31%);
+$score: hsl(229, 64%, 46%);
+$header_outline: hsl(217, 16%, 45%);

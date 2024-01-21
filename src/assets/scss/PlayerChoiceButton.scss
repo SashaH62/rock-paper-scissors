@@ -1,0 +1,70 @@
+.player-choice-btn {
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    outline: none;
+    background: transparent;
+    border: 0;
+    z-index: 2;
+    // margin: 0 5rem;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    .player-choice-btn-inner {
+        background-color: #fff;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: inset 0 8px 0px 0px #B9BDD4;
+
+        img {
+            height: 80px;
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            height: 210px;
+            width: 210px;
+            border-radius: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            z-index: -1;
+        }
+
+        &.paper {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            &::before {
+                background-image: $paper_gradient;
+                box-shadow: hsl(230, 89%, 55%) 0px 10px; 
+            }
+        }
+
+        &.rock {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            &::before {
+                background-image: $rock_gradient;
+                box-shadow: hsl(349, 71%, 35%) 0px 10px; 
+            }
+        }
+
+        &.scissors {
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+            &::before {
+                background-image: $scissors_gradient;
+                box-shadow: hsl(39, 89%, 35%) 0px 10px; 
+            }
+        }
+    }
+}

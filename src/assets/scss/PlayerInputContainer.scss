@@ -1,0 +1,9 @@
+.player-input-container {
+    display: grid;
+    gap: 7rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    max-width: 800px;
+    background: url('../images/bg-triangle.svg') no-repeat center;
+    background-size: 60%;
+}
